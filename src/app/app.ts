@@ -6,6 +6,7 @@ import { EventBinding } from "./event-binding";
 import { DoubleDataBinding } from "./double-data-binding";
 import { RenduConditionnel } from "./rendu-conditionnel";
 import { SyntaxeEtUtilisationDeSignal } from "./syntaxe-et-utilisation-de-signal";
+import { SignalComputed } from "./signal-computed";
 
 
 
@@ -14,7 +15,7 @@ import { SyntaxeEtUtilisationDeSignal } from "./syntaxe-et-utilisation-de-signal
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal]
+  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal, SignalComputed]
 })
 export class App {
   title = 'AngularCourse';
