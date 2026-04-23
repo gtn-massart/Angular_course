@@ -19,7 +19,7 @@ import { Component, signal } from '@angular/core';
 })
 export class SyntaxeEtUtilisationDeSignal {
   // ↓ Un signal est une variable réactive.
-  title = signal("Syntaxe et utilisation d'un");
+  title = signal("Utilisation d'un");
   compteur = signal(0);
 
   constructor() {
