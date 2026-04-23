@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { SingleFileComponent } from "./single-file-component";
+import { InterpolationString } from "./interpolation-string";
+import { PropertyBinding } from "./property-binding";
+import { EventBinding } from "./event-binding";
+import { DoubleDataBinding } from "./double-data-binding";
+import { RenduConditionnel } from "./rendu-conditionnel";
+
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel]
 })
 export class App {
-  protected readonly title = signal('AngularCourse');
+  title = 'AngularCourse';
 }
