@@ -1,4 +1,4 @@
-import { Component, computed, linkedSignal, signal } from '@angular/core';
+import { Component, computed, effect, linkedSignal, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 interface Product {
