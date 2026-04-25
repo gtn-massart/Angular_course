@@ -9,6 +9,7 @@ import { SyntaxeEtUtilisationDeSignal } from "./syntaxe-et-utilisation-de-signal
 import { SignalComputed } from "./signal-computed";
 import { SignalEffect } from "./signal-effect";
 import { DymaComponent } from "./signal-linked-signal";
+import { ViewChildViewChildren } from "./view-child-view-children";
 
 
 
@@ -18,7 +19,7 @@ import { DymaComponent } from "./signal-linked-signal";
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal, SignalComputed, SignalEffect, DymaComponent]
+  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal, SignalComputed, SignalEffect, DymaComponent, ViewChildViewChildren]
 })
 export class App {
   title = 'AngularCourse';
