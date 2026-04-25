@@ -6,7 +6,7 @@ import { FruitComponent } from './components/fruit';
   imports: [FruitComponent],
   template: `
     <div>
-      <h1>viewChild et viewChildren</h1>
+      <h1>viewChild() et viewChildren()</h1>
       <input #myInput type="text" />
       <button (click)="addFruit()">Add</button>
       <app-fruit />
