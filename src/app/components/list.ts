@@ -8,7 +8,7 @@ import { ThingsService } from '../shared/services/things-service';
     <div>
       <ul>
         @for (thing of things(); track $index) {
-          <li>{{ thing }}</li>
+          <li (click)="remove($index)">{{ thing }}</li>
         }
       </ul>
     </div>
@@ -23,4 +23,8 @@ import { ThingsService } from '../shared/services/things-service';
 export class List {
   thingsService = inject(ThingsService);
   things = this.thingsService.things;
+
+  remove(index: number) {
+    this.thingsService.remove(index);
+  }
 }
