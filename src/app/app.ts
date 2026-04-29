@@ -11,6 +11,7 @@ import { SignalEffect } from "./signal-effect";
 import { DymaComponent } from "./signal-linked-signal";
 import { ViewChildViewChildren } from "./view-child-view-children";
 import { NgContent } from "./ng-content";
+import { TokenClassInjection } from "./token-class-injection";
 
 
 
@@ -20,7 +21,7 @@ import { NgContent } from "./ng-content";
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal, SignalComputed, SignalEffect, DymaComponent, ViewChildViewChildren, NgContent]
+  imports: [SingleFileComponent, InterpolationString, PropertyBinding, EventBinding, DoubleDataBinding, RenduConditionnel, SyntaxeEtUtilisationDeSignal, SignalComputed, SignalEffect, DymaComponent, ViewChildViewChildren, NgContent, TokenClassInjection]
 })
 export class App {
   title = 'AngularCourse';
