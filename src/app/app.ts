@@ -12,8 +12,6 @@ import { DymaComponent } from './signal-linked-signal';
 import { ViewChildViewChildren } from './view-child-view-children';
 import { NgContent } from './ng-content';
 import { TokenClassInjection } from './token-class-injection';
-import { Form } from "./components/form";
-import { List } from "./components/list";
 import { CreationUtilisationService } from './creation-utilisation-service';
 
 
@@ -36,8 +34,6 @@ import { CreationUtilisationService } from './creation-utilisation-service';
     NgContent,
     TokenClassInjection,
     CreationUtilisationService,
-    Form,
-    List
 ],
 })
 export class App {
