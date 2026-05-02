@@ -18,6 +18,9 @@ import { ThingsService } from '../shared/services/things-service';
       list-style-type: none;
       padding: 0;
     }
+    li {
+      cursor: pointer;
+    }
   `,
 })
 export class List {
