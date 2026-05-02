@@ -13,6 +13,7 @@ import { ViewChildViewChildren } from './view-child-view-children';
 import { NgContent } from './ng-content';
 import { TokenClassInjection } from './token-class-injection';
 import { CreationUtilisationService } from './creation-utilisation-service';
+import { LesDirectives } from "./les-directives";
 
 
 @Component({
@@ -34,6 +35,7 @@ import { CreationUtilisationService } from './creation-utilisation-service';
     NgContent,
     TokenClassInjection,
     CreationUtilisationService,
+    LesDirectives
 ],
 })
 export class App {
