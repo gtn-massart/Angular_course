@@ -26,12 +26,12 @@ export class SignalEffect {
   constructor() {
     effect(() => {
       const id = this.idProduit();
-      fetch(`https://api.exemple.com/produits/${id}`)
-        .then((response) => response.json())
-        .then((data) => {
-          this.produit.set(data);
-        })
-        .catch((err) => console.error('Erreur de récupération :', err));
+      // fetch(`https://api.exemple.com/produits/${id}`)
+        // .then((response) => response.json())
+        // .then((data) => {
+        //   this.produit.set(data);
+        // })
+        // .catch((err) => console.error('Erreur de récupération :', err));
     });
   }  
 }
