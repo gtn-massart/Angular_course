@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <h3>{{ name | uppercase | lowercase }}</h3>
       <h3>{{ name | titlecase }}</h3>
       <h3>{{ result | number: '1.0-2' }}</h3>
-      <h3>{{ result | number: '2.0-2' }}</h3>
+      <!-- <h3>{{ result | number: '2.0-2' }}</h3> -->
       <h3>{{ user | json }}</h3>
       <!-- <pre>{{ user | json }}</pre> -->
        <h3>{{ price | currency: 'EUR'}}</h3>
