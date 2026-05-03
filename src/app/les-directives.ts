@@ -7,7 +7,7 @@ import { InputDirective } from './shared/directives/input-directive';
   template: `
     <div>
       <h1>Les directives</h1>
-      <input appInput type="text">
+      <input [appInput]="true" type="text" />
     </div>
   `,
   styles: `
