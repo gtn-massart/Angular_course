@@ -13,9 +13,9 @@ import { ViewChildViewChildren } from './view-child-view-children';
 import { NgContent } from './ng-content';
 import { TokenClassInjection } from './token-class-injection';
 import { CreationUtilisationService } from './creation-utilisation-service';
-import { LesDirectives } from "./les-directives";
+import { LesDirectives } from './les-directives';
 import { LesDirectivesStructurelles } from './les-directives-structurelles';
-
+import { Pipes } from './pipes';
 
 @Component({
   selector: 'app-root',
@@ -37,8 +37,9 @@ import { LesDirectivesStructurelles } from './les-directives-structurelles';
     TokenClassInjection,
     CreationUtilisationService,
     LesDirectives,
-    LesDirectivesStructurelles
-],
+    LesDirectivesStructurelles,
+    Pipes,
+  ],
 })
 export class App {
   title = 'AngularCourse';
