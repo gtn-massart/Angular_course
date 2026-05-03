@@ -14,6 +14,7 @@ import { NgContent } from './ng-content';
 import { TokenClassInjection } from './token-class-injection';
 import { CreationUtilisationService } from './creation-utilisation-service';
 import { LesDirectives } from "./les-directives";
+import { LesDirectivesStructurelles } from './les-directives-structurelles';
 
 
 @Component({
@@ -35,7 +36,8 @@ import { LesDirectives } from "./les-directives";
     NgContent,
     TokenClassInjection,
     CreationUtilisationService,
-    LesDirectives
+    LesDirectives,
+    LesDirectivesStructurelles
 ],
 })
 export class App {
