@@ -8,10 +8,11 @@ import {
   UpperCasePipe,
 } from '@angular/common';
 import { Component } from '@angular/core';
+import { HidePipe } from './shared/pipes/hide-pipe';
 
 @Component({
   selector: 'app-pipes',
-  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, DecimalPipe, JsonPipe, CurrencyPipe, DatePipe],
+  imports: [UpperCasePipe, LowerCasePipe, TitleCasePipe, DecimalPipe, JsonPipe, CurrencyPipe, DatePipe, HidePipe],
   template: `
     <div>
       <h1>Les pipes |</h1>
@@ -24,7 +25,8 @@ import { Component } from '@angular/core';
       <!-- <pre>{{ user | json }}</pre> -->
        <h3>{{ price | currency: 'EUR'}}</h3>
        <h3>{{ today | date: 'EEEE dd MMMM yy'}}</h3>
-       <h3></h3>
+       <!-- ↓ custom pipe -->
+       <h3>{{ password | hide: 3 }}</h3>
     </div>
   `,
   styles: `
@@ -34,6 +36,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class Pipes {
+  password = '123456';
   name = 'marmouz';
   result = 1 / 3;
   user = {
