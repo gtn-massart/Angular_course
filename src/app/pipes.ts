@@ -36,7 +36,6 @@ import { HidePipe } from './shared/pipes/hide-pipe';
   `,
 })
 export class Pipes {
-  password = '123456';
   name = 'marmouz';
   result = 1 / 3;
   user = {
@@ -49,5 +48,6 @@ export class Pipes {
   };
   price = 50;
   today = new Date();
+  password = '123456';
 
 }
