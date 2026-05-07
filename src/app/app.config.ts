@@ -10,6 +10,7 @@ import fr from '@angular/common/locales/fr';
 import { routes } from './app.routes';
 import { MY_CONFIG_TOKEN, MyClass } from './shared/dummy';
 import { config } from 'rxjs';
+import { provideRouter } from '@angular/router';
 
 registerLocaleData(fr);
 
@@ -17,6 +18,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
+    provideRouter(routes),
     {
       provide: MY_CONFIG_TOKEN,
       useFactory: () => {

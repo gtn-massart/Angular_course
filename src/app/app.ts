@@ -16,7 +16,6 @@ import { CreationUtilisationService } from './creation-utilisation-service';
 import { LesDirectives } from './les-directives';
 import { LesDirectivesStructurelles } from './les-directives-structurelles';
 import { Pipes } from './pipes';
-import { Routing } from "./routing";
 
 @Component({
   selector: 'app-root',
@@ -40,8 +39,7 @@ import { Routing } from "./routing";
     LesDirectives,
     LesDirectivesStructurelles,
     Pipes,
-    Routing
-],
+  ],
 })
 export class App {
   title = 'AngularCourse';
