@@ -47,8 +47,23 @@ body {
   padding: 6px 12px;
 }
 
+.b1 {
+  border: 1px solid red;
+}
+
+.b2 {
+  border: 1px solid purple;
+}
+
 input {
-  border: var(--border) ;
+  border: var(--border);
   border-radius: 6px;
   padding: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
 }
